@@ -25,10 +25,10 @@ public class Applictionconfiguration {
 	@Bean
 	public InMemoryUserDetailsManager uservalues()
 	{
-		UserDetails user1=User.withUsername("barath")
+		UserDetails user1=org.springframework.security.core.userdetails.User.withUsername("barath")
 				.password(encoder().encode("Manojkumar123"))
 				.roles("USER").build();
-		UserDetails user2=User.withUsername("varson")
+		UserDetails user2=org.springframework.security.core.userdetails.User.withUsername("varson")
 				.password(encoder().encode("Thivinkanth123"))
 				.roles("USER").build();
 
